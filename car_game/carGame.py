@@ -28,20 +28,17 @@ def background():
     
     gamedisplay.blit(backgroungimg,(500,0))
    
-  
-
+ 
 #define car  x,y position
 def car(x,y):
     #blit is use to drage image from position to position
     gamedisplay.blit(carimg,(x,y))
-
 
 def game_loop():
     #used for placeing draging object in screen. i.e object position on screen
     x =(display_width*0.5)
     y = (display_height*0.84)
     x_change=0
-
 
 #basically used for exit event
     bumpad = False
@@ -75,8 +72,7 @@ def game_loop():
 
         pygame.display.update()
         clock.tick(60)
-
-
+        
 game_loop()
 pygame.quit()
 quit()
